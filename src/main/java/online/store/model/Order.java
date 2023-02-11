@@ -3,10 +3,8 @@ package online.store.model;
 import javax.persistence.*;
 
 /**
- * @author Michael Pogrebinsky - www.topdeveloperacademy.com
  * Represents an order of a product from our online store, stored in the Orders table.
  * Each order can contain multiple items of the same product
- * You do not need to modify this file
  */
 @Entity
 @Table(name = "Orders")

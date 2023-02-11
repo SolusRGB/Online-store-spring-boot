@@ -8,10 +8,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * @author Michael Pogrebinsky - www.topdeveloperacademy.com
  * This class validates credit card information.
  * Simulates an external validation library
- * You do not need to modify this class
  */
 @Service
 public class CreditCardValidationService {
