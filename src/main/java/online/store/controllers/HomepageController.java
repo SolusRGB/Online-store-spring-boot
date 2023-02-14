@@ -20,8 +20,7 @@ public class HomepageController {
 
     @GetMapping("/categories")
     public String getProductCategories() {
-        return productService.getAllSupportedCategories().stream()
-                .collect(Collectors.joining(", "));
+        return String.join(", ", productService.getAllSupportedCategories());
     }
 
     @GetMapping("/deals_of_the_day/{number_of_products}")
@@ -38,7 +37,6 @@ public class HomepageController {
         }
         return new ProductsWrapper(productService.getAllProducts());
     }
-
-
-
 }
+
+
